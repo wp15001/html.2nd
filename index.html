@@ -44,45 +44,80 @@ nav ul	{font-size: 0.75em;
 	margin-left: 0;
 	padding-left: 0;
 	height: 30px;
-	background-color: #005087}
+	background-color: #333333;
+    border-radius: 5px;
+    background: linear-gradient(#777777 0%, #444444 50%, #333333 51%, #555555 100%);
+}
 
 nav li	{list-style-type: none;
 	float: left}
 
-nav li a	{display: block;
+nav ul li a{
+	display: block;
 	width: 120px;
 	line-height: 30px;
 	text-decoration: none;
 	text-align: center;
 	color: #ffffff;
-	background-color: #005087;
 	border-right: solid 1px #ffffff}
 
-nav ul li a:hover	{background-color: #017acd;}
+nav ul li a:hover
+{
+	background-color: #017acd;
+}
+
+nav ul li:first-of-type a:hover{
+border-radius: 5px 0 0 5px;
+}
+
 
 /* コンテンツ */
 article	{width: auto;
 	margin-left: auto;
 	margin-right: auto}
 
+article header{
+	border: solid 1px #aaaaaa;
+	margin:29px 0 10px;
+	padding: 18px;
+	border-radius: 5px;
+	box-shadow: 0px 2px 3px #cccccc;
+}
+
 article header h1	{background: none;
 	font-size: 28px;
 	color: #000000;
 	line-height: 45px;
 	padding-left: 0;
-	margin-bottom: 0
-	font-weight: normal}
+	margin: 0;
+	font-weight: normal;
+    float: left;
+}
+
+article header p {
+	font-size: 16px;
+	color:#444444;
+	margin-left: 300px;
+}
 
 article section{
     clear: both;
+    border: solid 1px #aaaaaa;
+    margin: 20px 0 10px;
+    padding: 18px;
+    border-radius: 5px;
+    overflow: hidden;
+    background: linear-gradient(#ffffff 0%, #dfdfdf 100%);
+    box-shadow: 0 2px 3px #cccccc, 0px 0px 4px 3px #ffffff inset;
 }
+
 article section h1	{
 	background: none;
 	font-size: 24px;
 	font: weight: normal;
 	line-height: 22px;
 	padding-left: 0;
-	margin-top: 30px;
+	margin-top: 0px;
 	margin-bottom: 20px;
 	margin-left: 0;
 	margin-right: 0}
@@ -90,8 +125,8 @@ article section h1	{
 article p	{font-size: 0.75em;
 	line-height: 1.6;
 	margin-top: 10px;
-	margin-left: 12px;
-	margin-right: 12px}
+	margin-left: 0px;
+	margin-right: 0px}
 
 /* フッター */
 footer	{color: #ffffff;
@@ -116,12 +151,14 @@ figure{
 article section:nth-of-type(odd) figure
 	{float: right;
 	margin-left: 15px;
-	margin-bottom: 15px}
+	margin-bottom: 0px;
+}
 
 article section:nth-of-type(even) figure
 	{float: left;
 	margin-right: 15px;
-	margin-bottom: 15px}
+	margin-bottom: 0px;
+}
 
 article section figcaption{
 	color: #666666;
